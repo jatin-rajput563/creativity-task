@@ -8,10 +8,9 @@
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(-45deg, #ff416c, #ff4b2b, #1a2a6c, #0099f7);
-    background-size: cover;
+    background-size: 400% 400%;
     animation: gradientBG 10s infinite ease-in-out;
     color: white;
-    text-align: center;
 }
 
 @keyframes gradientBG {
@@ -30,15 +29,10 @@ body {
 
 section {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding: 20px;
 }
 
-.header h1 {
-    font-size: 4rem;
+.header-heading {
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
     animation: waveText 3s infinite alternate ease-in-out;
 }
@@ -103,4 +97,22 @@ section {
     color: white;
     text-decoration: none;
     margin: 0 10px;
+}
+
+
+
+.d-flex {
+    display: flex;
+}
+
+.gap-18 {
+    gap: 18px;
+}
+
+.animate__slow {
+    animation-duration: 4s !important;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }

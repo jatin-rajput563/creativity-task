@@ -6,22 +6,22 @@
     --fs-2xl: 64px;
 }
 
-.text-sm {
+.fs-sm {
     font-size: var(--fs-sm) !important;
 }
 
-.text-md {
+.fs-md {
     font-size: var(--fs-md) !important;
 }
 
-.text-lg {
+.fs-lg {
     font-size: var(--fs-lg) !important;
 }
 
-.text-xl {
+.fs-xl {
     font-size: var(--fs-xl) !important;
 }
 
-.text-2xl {
+.fs-2xl {
     font-size: var(--fs-2xl) !important;
 }
