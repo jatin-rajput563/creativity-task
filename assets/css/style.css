@@ -13,20 +13,6 @@ body {
     color: white;
 }
 
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 .header-heading {
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
     animation: waveText 3s infinite alternate ease-in-out;
@@ -35,16 +21,6 @@ body {
 .cooding-para {
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
     animation: waveText 3s infinite alternate ease-in-out;
-}
-
-@keyframes waveText {
-    0% {
-        transform: translateY(0px);
-    }
-
-    100% {
-        transform: translateY(10px);
-    }
 }
 
 .about,
@@ -58,17 +34,7 @@ body {
     animation: fadeIn 2s ease-in-out;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
 
 .faq .question {
     margin: 10px 0;
@@ -94,8 +60,6 @@ body {
     margin: 0 10px;
 }
 
-
-
 .d-flex {
     display: flex;
 }
@@ -112,10 +76,6 @@ body {
     overflow: hidden;
 }
 
-
-
-
-
 .pb-200 {
     padding-bottom: 200px;
 }
@@ -126,4 +86,65 @@ body {
 
 .mx-w-950 {
     max-width: 950px;
+}
+
+.accordion {
+    --bs-accordion-bg: transparent !important;
+    --bs-accordion-button-bg: rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white !important;
+    background-color: unset !important;
+    box-shadow: unset !important;
+}
+
+.accordion-button:focus {
+    box-shadow: unset !important;
+}
+
+.accordion-button::after {
+    background-image: url(../image/up-arrow.png) !important;
+}
+
+.accordion {
+    max-width: 800px !important;
+    width: 100% !important;
+}
+
+@keyframes waveText {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
