@@ -27,11 +27,6 @@ body {
     }
 }
 
-section {
-    height: 100vh;
-    padding: 20px;
-}
-
 .header-heading {
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
     animation: waveText 3s infinite alternate ease-in-out;
@@ -115,4 +110,20 @@ section {
 
 .overflow-hidden {
     overflow: hidden;
+}
+
+
+
+
+
+.pb-200 {
+    padding-bottom: 200px;
+}
+
+.mx-w-812 {
+    max-width: 812px;
+}
+
+.mx-w-950 {
+    max-width: 950px;
 }
