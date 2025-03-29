@@ -1,27 +1,44 @@
 :root {
-    --fs-sm: 18px;
     --fs-md: 24px;
-    --fs-lg: 36px;
-    --fs-xl: 48px;
     --fs-2xl: 64px;
-}
-
-.fs-sm {
-    font-size: var(--fs-sm) !important;
 }
 
 .fs-md {
     font-size: var(--fs-md) !important;
 }
 
-.fs-lg {
-    font-size: var(--fs-lg) !important;
-}
-
-.fs-xl {
-    font-size: var(--fs-xl) !important;
-}
-
 .fs-2xl {
     font-size: var(--fs-2xl) !important;
+}
+
+@media (max-width: 992px) {
+    :root {
+        --fs-md: 20px;
+        --fs-2xl: 48px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    :root {
+        --fs-md: 18px;
+        --fs-2xl: 40px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    :root {
+        --fs-md: 16px;
+        --fs-2xl: 36px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    :root {
+        --fs-md: 14px;
+        --fs-2xl: 18px;
+    }
+
 }
